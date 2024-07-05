@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body class="inter">
+
+    <dialog class="welcome-greeting">
+        <div class="greeting-content">
+            <h1 class="greeting">Click start to play TIC TAC TOE</h1>
+            <button type="button" class="greeting-button">Start</button>
+        </div>
+    </dialog>
+
+    <dialog id="player1" class="welcome-greeting">
+        <form id="player1Form" method="dialog">
+            <div class="player-greeting">
+                <h1>Who are you player 1?</h1>
+            </div>
+
+            <div class="player-input-container">
+                <label for="player1Name">Enter your name:</label>
+                <input type="text" name="name" id="player1Name" required>
+            </div>
+
+            <div class="player-choice-container">
+                <div class="player-choice">
+                    <input type="button" id="player1X" name="mark" value="X" class="choice" required>
+                </div>
+
+                <div class="player-choice">
+                    <input type="button" id="player1O" name="mark" value="O" class="choice" required>
+                </div>
+            </div>
+
+            <!-- <button id="player1Button">Continue</button> -->
+        </form>
+    </dialog>
+
+    <dialog id="player2" class="welcome-greeting">
+        <form id="player2Form">
+            <div class="player-greeting">
+                <h1>Who are you player 2?</h1>
+            </div>
+
+            <div class="player-input-container">
+                <label for="player2Name">Enter your name:</label>
+                <input type="text" name="name" id="player2Name" required>
+            </div>
+
+            <div class="player-choice-container">
+                <div class="player-choice">
+                    <input type="button" id="player2X" name="mark" value="X" class="choice">
+                </div>
+
+                <div class="player-choice">
+                    <input type="button" id="player2O" name="mark" value="O" class="choice">
+                </div>
+            </div>
+
+            <!-- <button id="player2Button">Start game!</button> -->
+        </form>
+    </dialog>
+
+    <div class="game-container">
+        <div class="gameboard">
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+        </div>
+    </div>
+
+    <dialog id="winnerModal">
+        <div class="winnerContainer">
+            <h1 class="winnerGreeting"></h1>
+            <button id="restartButton">Restart</button>
+        </div>
+    </dialog>
+    
+</body>
+</html>
