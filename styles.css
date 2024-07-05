@@ -152,11 +152,19 @@
   dialog{
     background-color: rgba(255, 255, 255, 0.692);
     border: 1px solid #c98122;
-    transition: 0.7s ease-out,
+    animation: modalTransition .3s ease;
   }
 
-  dialog[open]{
-    opacity: 1;
+
+  @keyframes modalTransition {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
   input[type=button]{
